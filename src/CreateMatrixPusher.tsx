@@ -42,7 +42,10 @@ export const CreateMatrixPusher = () => {
     }
 
     return (
-        <Box>
+        <Box
+            maxWidth={'40em'}
+            margin={'auto'}
+        >
             <form onSubmit={handleSubmit}>
                 <VStack spacing={4}>
                     <FormControl id="url" isRequired>

@@ -1,4 +1,3 @@
-import './App.css'
 import {Login} from 'matrix-rx'
 import {ChakraProvider} from '@chakra-ui/react'
 import {CreateMatrixPusher} from './CreateMatrixPusher.tsx'
