@@ -1946,9 +1946,9 @@ copy-to-clipboard@3.3.3:
     toggle-selection "^1.0.6"
 
 core-js-pure@^3.30.2:
-  version "3.30.2"
-  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.30.2.tgz#005a82551f4af3250dcfb46ed360fad32ced114e"
-  integrity sha512-p/npFUJXXBkCCTIlEGBdghofn00jWG6ZOtdoIXSJmAu2QBvN0IqpZXWweOytcwE6cfx8ZvVUy1vw8zxhe4Y2vg==
+  version "3.31.0"
+  resolved "https://registry.yarnpkg.com/core-js-pure/-/core-js-pure-3.31.0.tgz#052fd9e82fbaaf86457f5db1fadcd06f15966ff2"
+  integrity sha512-/AnE9Y4OsJZicCzIe97JP5XoPKQJfTuEG43aEVLFJGOJpyqELod+pE6LEl63DfG1Mp8wX97LDaDpy1GmLEUxlg==
 
 core-js@3.18.3:
   version "3.18.3"
@@ -2575,9 +2575,9 @@ math-random@2.0.1:
   integrity sha512-oIEbWiVDxDpl5tIF4S6zYS9JExhh3bun3uLb3YAinHPTlRtW4g1S66LtJrJ4Npq8dgIa8CLK5iPVah5n4n0s2w==
 
 matrix-rx@^0.2.2:
-  version "0.2.2"
-  resolved "https://registry.yarnpkg.com/matrix-rx/-/matrix-rx-0.2.2.tgz#cdcc3bc17f3e3859b82f6294ee3f235f36e1ebbb"
-  integrity sha512-aDF8RkMY4aHhUfXdpI5DRR12xBEiRmhfHAz5+yw/2RQ+cAExO9/dafDq+MeaBLIvs95uhOfgt243X6UrDHAWMQ==
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/matrix-rx/-/matrix-rx-0.2.3.tgz#3083256b0ad42e1c97a0af2826ce692553fad912"
+  integrity sha512-ePdPC+n+jtnACO/ZKlORHYjxm2dJWSVRzQIm2CIbwuZ9qHt1vdiDKVJ5JW4tQP7Acaja/gtFuMf5/nkAsmAP+w==
   dependencies:
     "@chakra-ui/icons" "^2.0.13"
     "@chakra-ui/react" "^2.4.3"
