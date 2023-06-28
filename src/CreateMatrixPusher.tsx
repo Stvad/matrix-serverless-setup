@@ -59,9 +59,9 @@ export const CreateMatrixPusher = () => {
                     <Button type="submit" colorScheme="blue">
                         Create Pusher
                     </Button>
+                    <Button colorScheme="pink" onClick={() => matrixCtx.logout()}>Logout</Button>
                 </VStack>
             </form>
-            <Button colorScheme="pink" onClick={() => matrixCtx.logout()}>Logout</Button>
         </Box>
     )
 }
