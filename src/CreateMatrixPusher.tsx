@@ -1,4 +1,4 @@
-import {Box, Button, FormControl, FormLabel, Input, VStack} from '@chakra-ui/react'
+import {Box, Button, FormControl, FormLabel, Input, VStack, FormErrorMessage} from '@chakra-ui/react'
 import {FormEvent, useState} from 'react'
 import {useMatrixClient, useMatrixContext} from 'matrix-rx'
 
@@ -30,6 +30,7 @@ export const CreateMatrixPusher = () => {
         }
     }
 
+    const urlPath = '/_matrix/push/v1/notify'
     return (
         <Box
             maxWidth={'40em'}
@@ -37,7 +38,11 @@ export const CreateMatrixPusher = () => {
         >
             <form onSubmit={handleSubmit}>
                 <VStack spacing={4}>
-                    <FormControl id="url" isRequired>
+                    <FormControl
+                        id="url"
+                        isRequired
+                        isInvalid={!!url && new URL(url).pathname !== urlPath}
+                    >
                         {/*todo validation to be of appropriate format*/}
                         <FormLabel>URL</FormLabel>
                         <Input
@@ -45,6 +50,7 @@ export const CreateMatrixPusher = () => {
                             value={url}
                             onChange={(e) => setUrl(e.target.value)}
                         />
+                        <FormErrorMessage>URL path must be `{urlPath}`</FormErrorMessage>
                     </FormControl>
 
                     <FormControl id="pushkey" isRequired>
