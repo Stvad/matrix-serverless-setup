@@ -41,7 +41,7 @@ export const CreateMatrixPusher = () => {
                     <FormControl
                         id="url"
                         isRequired
-                        isInvalid={!!url && new URL(url).pathname !== urlPath}
+                        isInvalid={!!url && createUrl(url)?.pathname !== urlPath}
                     >
                         {/*todo validation to be of appropriate format*/}
                         <FormLabel>URL</FormLabel>
@@ -50,7 +50,7 @@ export const CreateMatrixPusher = () => {
                             value={url}
                             onChange={(e) => setUrl(e.target.value)}
                         />
-                        <FormErrorMessage>URL path must be `{urlPath}`</FormErrorMessage>
+                        <FormErrorMessage>Must be HTTPS URL with path `{urlPath}`</FormErrorMessage>
                     </FormControl>
 
                     <FormControl id="pushkey" isRequired>
@@ -70,4 +70,12 @@ export const CreateMatrixPusher = () => {
             </form>
         </Box>
     )
+}
+
+function createUrl(url: string) {
+    try {
+        return new URL(url)
+    } catch (e) {
+        return null
+    }
 }
